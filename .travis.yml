@@ -37,5 +37,6 @@ deploy:
     skip_cleanup: true
     github_token: $GH_TOKEN
     local_dir: dist/$GH_REPO
+    keep_history: true
     on:
         branch: master
