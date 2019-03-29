@@ -46,8 +46,16 @@
       margin: 0;
 
       li {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
         font-size: 1.1em;
         text-transform: capitalize;
+
+        img {
+          height: 1.1em;
+          margin-right: 5px;
+        }
       }
     }
   }

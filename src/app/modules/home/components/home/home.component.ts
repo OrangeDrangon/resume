@@ -10,29 +10,29 @@ export class HomeComponent implements OnInit {
   public lists: IAttribute[][] = [
     [
       {
-        icon: '📚',
+        icon: 'assets/emoji/books.png',
         content: 'student',
       },
       {
-        icon: '💻',
+        icon: 'assets/emoji/computer.png',
         content: 'developer'
       },
       {
-        icon: '🔧',
+        icon: 'assets/emoji/wrench.png',
         content: 'tinkerer'
       }
     ],
     [
       {
-        icon: '✅',
+        icon: 'assets/emoji/check-mark.png',
         content: 'problem solver'
       },
       {
-        icon: '📋',
+        icon: 'assets/emoji/clipboard.png',
         content: 'copy paster'
       },
       {
-        icon: '🎮',
+        icon: 'assets/emoji/video-game.png',
         content: 'video game nerd'
       }
     ]
