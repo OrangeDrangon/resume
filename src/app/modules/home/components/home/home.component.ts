@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material';
-import { CopyService } from 'src/app/services/copy/copy.service';
+import { CopyService } from '../../services/copy/copy.service';
 
 @Component({
   selector: 'app-home-home',
