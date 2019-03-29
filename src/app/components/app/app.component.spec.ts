@@ -1,7 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { ToolbarComponent } from '../toolbar/toolbar.component';
 import { MatToolbarModule, MatSnackBarModule } from '@angular/material';
 
 describe('AppComponent', () => {
@@ -14,7 +13,6 @@ describe('AppComponent', () => {
       ],
       declarations: [
         AppComponent,
-        ToolbarComponent
       ],
     }).compileComponents();
   }));
