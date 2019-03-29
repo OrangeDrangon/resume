@@ -2,14 +2,28 @@
   <mat-card class="person">
     <img src="assets/neptune.jpg" alt="">
     <div class="name">
-        <h1>Kyle</h1>
-        <h1>Rosenberg</h1>
+      <h1>Kyle</h1>
+      <h1>Rosenberg</h1>
     </div>
   </mat-card>
   <mat-card class="attributes">
     <ul *ngFor="let list of lists">
       <li *ngFor="let attribute of list">
         <img src="{{attribute.icon}}"><span>{{attribute.content}}</span>
+      </li>
+    </ul>
+  </mat-card>
+  <mat-card class="contact">
+    <ul>
+      <li matTooltip="Click to Open!">
+        <a mat-button href="https://www.github.com/OrangeDrangon" target="_blank" rel="norefferer">
+          <span class="mdi mdi-github-circle"></span><span>GitHub</span>
+        </a>
+      </li>
+      <li *ngFor="let contact of contacts" matTooltip="Click to Copy!" (click)="copy(contact.content)">
+        <button mat-button>
+            <span class="mdi mdi-{{contact.icon}}"></span><span>{{contact.content}}</span>
+        </button>
       </li>
     </ul>
   </mat-card>

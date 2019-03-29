@@ -13,7 +13,7 @@ $list-font-size: 1em;
     display: flex;
     flex-flow: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     img {
       width: 5em;
@@ -29,11 +29,17 @@ $list-font-size: 1em;
       h1 {
         width: fit-content;
         font-size: 1.75em;
-        text-transform: uppercase;
+        text-transform: capitalize;
         font-weight: 400;
         margin: 0;
       }
     }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   .attributes {
@@ -43,9 +49,6 @@ $list-font-size: 1em;
     align-items: center;
 
     ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
 
       li {
         display: flex;
@@ -54,8 +57,53 @@ $list-font-size: 1em;
         font-size: $list-font-size;
         text-transform: capitalize;
 
+        margin-bottom: 10px;
+
         img {
           height: $list-font-size;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+
+    ul {
+      margin-bottom: -10px;
+
+      li {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+
+        height: 1.5em;
+        font-size: 1em;
+        cursor: pointer;
+
+        margin-bottom: 10px;
+
+        button, a {
+          display: flex;
+          flex-flow: row;
+          justify-content: flex-start;
+          align-items: center;
+
+          width: 100%;
+
+          font-weight: normal;
+          font-size: inherit;
+          text-decoration: none;
+          color: inherit;
+
+          padding: 0;
+        }
+
+        .mdi {
+          font-size: 1.5em;
           margin-right: 5px;
         }
       }

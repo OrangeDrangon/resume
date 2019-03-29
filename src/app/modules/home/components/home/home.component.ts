@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material';
+import { CopyService } from 'src/app/services/copy/copy.service';
 
 @Component({
   selector: 'app-home-home',
@@ -38,9 +40,34 @@ export class HomeComponent implements OnInit {
     ]
   ];
 
-  constructor() { }
+  public contacts: IAttribute[] = [
+    {
+      icon: 'email',
+      content: 'kyle@ekrosenberg.com'
+    },
+    {
+      icon: 'phone',
+      content: '(937) 701-4506'
+    }
+  ];
+
+  constructor(private snackBar: MatSnackBar, private copyService: CopyService) { }
 
   ngOnInit() {
+  }
+
+  public copy(content: string) {
+    this.copyService.copy(content);
+    this.openSnackBar('Copied!');
+  }
+
+  public openSnackBar(message: string) {
+    const ref = this.snackBar.open(message, 'Dismiss!', {
+      duration: 3000
+    });
+    ref.onAction().subscribe(() => {
+      ref.dismiss();
+    });
   }
 
 }
