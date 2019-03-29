@@ -15,7 +15,7 @@ export class ToolbarComponent implements OnInit {
   }
 
   public openSnackbarPhone() {
-    this.openSnackbar('(937) 701-4506')
+    this.openSnackbar('(937) 701-4506');
   }
 
   public openSnackbarEmail() {
