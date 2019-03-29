@@ -9,6 +9,10 @@ $list-font-size: 1em;
     margin: 30px 20px 0;
   }
 
+  mat-card:last-child {
+    margin-bottom: 30px;
+  }
+
   .person {
     display: flex;
     flex-flow: row;
@@ -109,5 +113,9 @@ $list-font-size: 1em;
         }
       }
     }
+  }
+
+  .projects {
+
   }
 }
