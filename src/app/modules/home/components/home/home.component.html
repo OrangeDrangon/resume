@@ -1,0 +1,16 @@
+<div class="content">
+  <mat-card class="person">
+    <img src="assets/neptune.jpg" alt="">
+    <div class="name">
+        <h1>Kyle</h1>
+        <h1>Rosenberg</h1>
+    </div>
+  </mat-card>
+  <mat-card class="attributes">
+    <ul *ngFor="let list of lists">
+      <li *ngFor="let attribute of list">
+        <span >{{attribute.icon}}</span> {{attribute.content}}
+      </li>
+    </ul>
+  </mat-card>
+</div>

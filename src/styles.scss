@@ -3,17 +3,18 @@
 
 @include mat-core();
 
-$my-app-primary: mat-palette($mat-blue, A700, 700, A200);
-$my-app-accent: mat-palette($mat-pink, 500, 900, A100);
-$my-app-warn: mat-palette($mat-deep-orange);
+$app-primary: mat-palette($mat-blue, A700, 700, A200);
+$app-accent: mat-palette($mat-pink, 500, 900, A100);
+$app-warn: mat-palette($mat-deep-orange);
 
-$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+$my-app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 
 @include angular-material-theme($my-app-theme);
 
 html, body {
   margin: 0;
   height: 100%;
+  min-width: 300px;
 
   font-family: 'Roboto', sans-serif;
 }

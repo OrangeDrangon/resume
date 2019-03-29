@@ -1,0 +1,54 @@
+.content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  mat-card {
+    margin: 30px 20px 0;
+  }
+
+  .person {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 5em;
+      height: 5em;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .name {
+      display: flex;
+      flex-flow: column;
+
+      h1 {
+        width: fit-content;
+        font-size: 1.75em;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+  }
+
+  .attributes {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        font-size: 1.1em;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
