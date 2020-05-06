@@ -81,6 +81,25 @@ export const projects = [
     `,
   },
   {
+    slug: "resume",
+    name: "Resume",
+    url: "http://kmr.pw",
+    github: "https://github.com/OrangeDrangon/resume",
+    summary: `
+      <p>
+        This site is another sapper app. It is defintely overkill for what it is doing,
+        but I hope to add more functionality in the future as I dedicate more time to it.
+      </p>
+      <p>
+        It is currently using hardcoded articles. I have it setup in a way that would make it trivial
+        to add a database that enables me to update the projects and text without rebuilding the app.
+      </p>
+      <p>
+        This project is heavily work in progress but is functional as at least a basic protfolio at this time.
+      </p>
+    `,
+  },
+  {
     slug: "online-code-editor",
     name: "Online Code Editor",
     url: "https://editor.kmr.pw",
