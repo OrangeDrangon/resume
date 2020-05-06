@@ -1,0 +1,11 @@
+/__sapper__/
+/__cypress__/
+/node_modules/
+/.github/
+.editorconfig
+.gitignore
+.eslintrc.js
+.prettierrc.js
+Dockerfile
+README.md
+LICENSE
