@@ -26,7 +26,7 @@
     "prettier": "^2.0.4",
     "sapper": "^0.27.0",
     "svelte": "^3.0.0",
-    "svelte-loader": "^2.9.0",
+    "svelte-loader": "^3.0.0",
     "webpack": "^4.7.0"
   }
 }
